@@ -1,6 +1,7 @@
 package david.augusto.luan.interfaces;
 
 import david.augusto.luan.entidades.Funcionario;
+import david.augusto.luan.exceptions.FuncionarioNaoEncontrado;
 
 import java.util.ArrayList;
 import java.util.List;
