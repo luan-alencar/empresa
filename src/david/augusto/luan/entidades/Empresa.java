@@ -1,8 +1,9 @@
 package david.augusto.luan.entidades;
 
 import david.augusto.luan.interfaces.ContratarFuncionario;
+import david.augusto.luan.interfaces.DemitirFuncionario;
 
-public class Empresa implements ContratarFuncionario {
+public class Empresa implements ContratarFuncionario, DemitirFuncionario {
 
 	private String nome;
 
@@ -17,6 +18,5 @@ public class Empresa implements ContratarFuncionario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	
 
 }
