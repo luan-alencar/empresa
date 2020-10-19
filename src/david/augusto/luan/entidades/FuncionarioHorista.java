@@ -8,9 +8,9 @@ public class FuncionarioHorista extends Funcionario {
 	private double valorHora;
 	private int horasTrabalhadasNoMes;
 
-	public FuncionarioHorista(String cpf, String nome, double valorHora, double horasTrabalhadasNoMes) {
+	public FuncionarioHorista(String cpf, String nome, double valorHora, double valorHora1) {
 		super(cpf, nome);
-		this.valorHora = valorHora;
+		this.valorHora = valorHora1;
 	}
 
 	public void sethorasTrabalhadasNoMes(int horasTrabalhadasNoMes) {
