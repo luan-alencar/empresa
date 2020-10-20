@@ -9,10 +9,12 @@ import david.augusto.luan.exceptions.CpfJaExisteException;
 public interface ContratarFuncionario {
 	List<Funcionario> funcionarios = new ArrayList<Funcionario>();
 
-	default void contratar(Funcionario funcionario) throws CpfJaExisteException {
-		if (funcionarios.contains(funcionario)) {
-			throw new CpfJaExisteException();
+	default void contratar(Funcionario f) throws CpfJaExisteException {
+		for (Funcionario funcionario : funcionarios) {
+			if (funcionario.getCpf().equals(f.getCpf())) {
+				throw new CpfJaExisteException();
+			}
 		}
-		funcionarios.add(funcionario);
+		funcionarios.add(f);
 	}
 }
