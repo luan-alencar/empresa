@@ -28,7 +28,7 @@ public class EmpresaTest {
 	@Test
 	void testContratarComSucesso() throws CpfJaExisteException {
 		// Nesse caso, é para contratar o funcionário sem nenhum problema
-		Funcionario diretor = new FuncionarioCLT("555.555.555-55", "Diretor", 8000.0);
+		FuncionarioCLT diretor = new FuncionarioCLT("555.555.555-55", "Diretor", 8000.0);
 		empresa.contratar(diretor);
 		assertTrue(empresa.getFuncionarios().contains(diretor));
 	}

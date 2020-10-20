@@ -10,10 +10,8 @@ public interface ContratarFuncionario {
 	List<Funcionario> funcionarios = new ArrayList<Funcionario>();
 
 	default void contratar(Funcionario funcionario) throws CpfJaExisteException {
-		for (Funcionario f : funcionarios) {
-			if (funcionario.getCpf().equals(f.getCpf())) {
-				throw new CpfJaExisteException();
-			}
+		if (funcionarios.contains(funcionario)) {
+			throw new CpfJaExisteException();
 		}
 		funcionarios.add(funcionario);
 	}

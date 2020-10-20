@@ -8,7 +8,8 @@ import david.augusto.luan.interfaces.CalcularSalario;
 import david.augusto.luan.interfaces.ContratarFuncionario;
 import david.augusto.luan.interfaces.DemitirFuncionario;
 
-public class Empresa implements ContratarFuncionario, DemitirFuncionario, CalcularSalario, BuscarFuncionario {
+public class Empresa implements ContratarFuncionario, DemitirFuncionario, 
+	CalcularSalario, BuscarFuncionario {
 
 	private String nome;
 	private List<Funcionario> funcionarios;
